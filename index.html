@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Template Kindle</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <header id="mu-header" role="banner">
+    <div class="container">
+      <nav class="navbar navbar-default mu-navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle
+                navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+                class="icon-bar"></span></button>
+            <a class="navbar-brand" href="https://www.free-css.com/free-css-templates"><i class="fa fa-book"
+                aria-hidden="true"></i> Kindle</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav mu-menu navbar-right">
+              <li><a href="https://www.free-css.com/free-css-templates">HOME</a></li>
+              <li><a href="#mu-book-overview">OVERVIEW</a></li>
+              <li><a href="#mu-author">AUTHOR</a></li>
+              <li><a href="#mu-pricing">PRICE</a></li>
+              <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
+              <li><a href="#mu-contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section id="mu-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-sm-push-6">
+          <div class="mu-hero-right"><img src="assets/images/ebook.jpg" alt="website template image"></div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-sm-pull-6">
+          <div class="mu-hero-left">
+            <h1>Perfect Landing Page Template to Present Your eBook</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam saepe, recusandae quidem nulla! Eveniet
+              explicabo perferendis aut, ab quos omnis labore laboriosam quisquam hic deserunt ipsum maxime aspernatur
+              velit impedit.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <br>
+    <h1>Google Books</h1>
+    <select id="FilterSelect">
+      <option value="">value</option>
+      <option value="partial">Partial</option>
+      <option value="full">Full</option>
+    </select>
+    <select id="soertSelect">
+      
+    </select>
+    <input type="text" id="searchInput" placeholder="Enter search query">
+    <button id="actionButton" onclick="searchBooks()">Search</button>
+    <div id="loadingIndicator" style="display: none;">Loading...</div>
+    <div id="loader" style="display: none;">
+      <img width="100px" src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1263.gif" alt="Loading..." /> 
+    </div>
+  </div>
+
+  <div id="results" class="containerr">
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71U8HZ0dThL.jpg" height="430" width="340">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Six Of Crows</h1>
+          <h2>by Leigh Bardugo</h2>
+          <p>"Six of Crows is a twisty and elegantly crafted masterpiece that will thrill readers <br> from the
+            beginning to end. <br>It's all-too-rare, unputdownable book that keeps your eyes glued to the page and
+            your brain scrambling to figure out what’s going to happen next. The pages of crackling dialogues and
+            sumptuous description. Bardugo dives deep into this world, with full color and sound."</p>
+        </div>      
+        <div id="loader" style="display: none;">
+        <img width="100px" src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1263.gif" alt="Loading..." />
+      </div>
+      
+      <button id="readmoreButton">Read More</button>
+      <div id="addInfo" style="display: none;">
+        В мире, разделенном на две части барьером вечной темноты, где сверхъестественные существа питаются человеческой плотью, девушка-солдат обнаруживает в себе невероятную силу, которая может объединить страну. Но против нее строят заговоры опасные силы.
+      </div>
+      </div>
+
+    </div>
+
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71U8HZ0dThL.jpg" height="430" width="340">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Six Of Crows</h1>
+          <h2>by Leigh Bardugo</h2>
+          <p>"Six of Crows is a twisty and elegantly crafted masterpiece that will thrill readers <br> from the
+            beginning to end. <br>It's all-too-rare, unputdownable book that keeps your eyes glued to the page and
+            your brain scrambling to figure out what’s going to happen next. The pages of crackling dialogues and
+            sumptuous description. Bardugo dives deep into this world, with full color and sound."</p>
+        </div>
+        <div class="product-price-btn">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71U8HZ0dThL.jpg" height="430" width="340">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Six Of Crows</h1>
+          <h2>by Leigh Bardugo</h2>
+          <p>"Six of Crows is a twisty and elegantly crafted masterpiece that will thrill readers <br> from the
+            beginning to end. <br>It's all-too-rare, unputdownable book that keeps your eyes glued to the page and
+            your brain scrambling to figure out what’s going to happen next. The pages of crackling dialogues and
+            sumptuous description. Bardugo dives deep into this world, with full color and sound."</p>
+        </div>
+        <div class="product-price-btn">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71U8HZ0dThL.jpg" height="430" width="340">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Six Of Crows</h1>
+          <h2>by Leigh Bardugo</h2>
+          <p>"Six of Crows is a twisty and elegantly crafted masterpiece that will thrill readers <br> from the
+            beginning to end. <br>It's all-too-rare, unputdownable book that keeps your eyes glued to the page and
+            your brain scrambling to figure out what’s going to happen next. The pages of crackling dialogues and
+            sumptuous description. Bardugo dives deep into this world, with full color and sound."</p>
+        </div>
+        <div class="product-price-btn">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71U8HZ0dThL.jpg" height="430" width="340">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Six Of Crows</h1>
+          <h2>by Leigh Bardugo</h2>
+          <p>"Six of Crows is a twisty and elegantly crafted masterpiece that will thrill readers <br> from the
+            beginning to end. <br>It's all-too-rare, unputdownable book that keeps your eyes glued to the page and
+            your brain scrambling to figure out what’s going to happen next. The pages of crackling dialogues and
+            sumptuous description. Bardugo dives deep into this world, with full color and sound."</p>
+        </div>
+        <div class="product-price-btn">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+  
+
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
